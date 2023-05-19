@@ -7,14 +7,74 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #e0e2dc;
   color: #212121;
   line-height: 1.5;
 }
 
 #search-box {
+  display: block;
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-style: 16px;
+  box-shadow: inset;
+}
+
+.country-item {
+  font-size: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.country-info {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  color: #636262;
+  margin-top: 0rem;
+  margin-bottom: 0.625rem;
+}
+
+p > span {
+  color: #070707;
+}
+
+.country-list,
+.country-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.9375rem;
+  max-width: 37.5rem;
+  border-radius: 0.75rem;
+  border: 0.1875rem solid rgba(255, 255, 255, 0.12);
+}
+
+
+.country-info img {
+  margin: 0 auto;
+  display: block;
+}
+
+.country-list span {
+  display: inline-block;
+  font-size: 1.25rem;
+  vertical-align: super;
+}
+
+img + p {
+  font-weight: 700;
+  color: #070707;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
 }
